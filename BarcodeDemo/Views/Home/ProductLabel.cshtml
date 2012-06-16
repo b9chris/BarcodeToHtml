@@ -1,0 +1,52 @@
+﻿@model BarcodeDemo.Models.Product
+@using Brass9.Web.Documents.Barcode
+
+@{
+    ViewBag.Title = Model.Code;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section head {
+<style>
+@{
+	var barcodeSettings = new Barcode3of9.Barcode3of9Settings(
+		narrowWidth: ".015in",	// Width of narrow stripes and narrow gaps
+		wideWidth: ".045in",	// Width of wide stripes and wide gaps
+		height: ".4in"			// Height of the barcode
+	);
+}
+
+@* Writes out the CSS rules for the barcode(s) *@
+@Html.Raw(barcodeSettings.Styles)
+
+/* Put the barcode at the top-right of the screen/page */
+span.barcode {
+	position: absolute;
+	right: 5px; top: 5px;
+	display: block;
+}
+</style>
+}
+
+
+<h2>ProductLabel</h2>
+
+@* Write out the barcode. Wrapped in a tag like <span class=barcode>...</span> *@
+@Html.Raw(Barcode3of9.Current.BarcodeHtml(Model.Code))
+
+<fieldset>
+    <legend>Product</legend>
+
+    <div class="display-label">Code</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Code)
+    </div>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

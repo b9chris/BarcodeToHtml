@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brass9.Web.Documents.Barcode", "Brass9.Web.Documents.Barcode\Brass9.Web.Documents.Barcode.csproj", "{D0B30EFF-0209-4FD6-8F2B-5DE42CE4C169}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeDemo", "BarcodeDemo\BarcodeDemo.csproj", "{18877218-3853-4B68-B0D4-517F41C714DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0B30EFF-0209-4FD6-8F2B-5DE42CE4C169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0B30EFF-0209-4FD6-8F2B-5DE42CE4C169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0B30EFF-0209-4FD6-8F2B-5DE42CE4C169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0B30EFF-0209-4FD6-8F2B-5DE42CE4C169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18877218-3853-4B68-B0D4-517F41C714DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18877218-3853-4B68-B0D4-517F41C714DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18877218-3853-4B68-B0D4-517F41C714DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18877218-3853-4B68-B0D4-517F41C714DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

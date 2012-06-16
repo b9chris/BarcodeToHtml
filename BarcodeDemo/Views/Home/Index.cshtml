@@ -1,0 +1,15 @@
+﻿@model IEnumerable<BarcodeDemo.Models.Product>
+
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table>
+<tr><th>Code</th><th>Name</th></tr>
+@foreach (var item in Model) {
+<tr><td><a href="/home/productlabel/@item.Code">@Html.DisplayFor(modelItem => item.Code)</a></td><td>@Html.DisplayFor(modelItem => item.Name)</td></tr>
+}
+</table>
