@@ -3,6 +3,10 @@
 
 This library generates simple HTML and CSS to render a barcode on a webpage. The HTML and CSS used are intentionally very simple to achieve the broadest support possible between browsers and other downstream software that might be used to convert the HTML to some other format, like a PDF.
 
+## Example ##
+[An example page produced by this library.](http://b9chris.github.com/BarcodeToHtml/example%20barcode.html)<br/>
+[A screenshot of the above page.](http://b9chris.github.com/BarcodeToHtml/screenshot.png)
+
 ## Usage ##
 A barcode has 2 parts: The CSS and the HTML.
 
